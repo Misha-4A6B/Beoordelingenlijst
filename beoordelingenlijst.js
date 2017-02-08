@@ -6,6 +6,12 @@ id("btn1").onclick = function() {
 	log("Het cijfer is " + num + " en is dus " + gradeWord);
 }
 
+id("btn2").onclick = function() {
+	var num = parseInt(id("num2").value);
+	var gradeWord = gradeToWord(num);
+	log("De beoordeling is " + gradeWord + ", want het cijfer is " + num);
+}
+
 function gradeToWord(grade) {
 	if(grade <= 49) {
 		return "onvoldoende";
